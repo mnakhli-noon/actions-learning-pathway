@@ -4,6 +4,11 @@ on: push
 
 jobs:
   call-test-build-deploy:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     uses: mnakhli-noon/actions-learning-pathway/.github/workflows/build-test-deploy.yml@main
     with:
       node-version: '18.x'
+    

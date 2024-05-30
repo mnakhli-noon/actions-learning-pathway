@@ -1,0 +1,9 @@
+name: test-reusable-flow
+
+on: push
+
+jobs:
+  call-test-build-deploy:
+    uses: mnakhli-noon/actions-learning-pathway/.github/workflows/build-test-deploy.yml@main
+    with:
+      node-version: '18.x'
